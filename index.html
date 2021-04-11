@@ -1,40 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payme | Clone</title>
-    <link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="32x32">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="32x32" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="site-header">
-        <div class="header-container container">
-            <a class="site-logo">
-                <img class='logo-img' src="images/payme-logo.png" width="138" height="40" alt="site-logo">
-            </a>
-            <nav class="navbar">
-              <ul class="sitenav-list">
-                  <li class="sitenav-item transform"><a class="sitenav-link" href="#" >Pul o'tkazmalari</a></li>
-                  <li class="sitenav-item cashback"><a class="sitenav-link" href="#" >To'lovlar</a></li>
-                  <li class="sitenav-item help"><a class="sitenav-link" href="#" >Yordam</a></li>
-                  <li class="sitenav-item lang">
-                    <a class="sitenav-link" href="#" >O'zbekcha</a>
-                      <div class="dropdown-menu">
-                         <ul class="dropdown-list">
-                           <li class="dropdown-item ru"><a class="dropdown-link" href="#" >Русский</a></li>
-                           <li class="dropdown-item uz"><a class="dropdown-link" href="#" >O'zbekcha</a></li>
-                           <li class="dropdown-item eng"><a class="dropdown-link" href="#" >English</a></li>
-                         </ul>
-                      </div> 
+      <div class="header-container container">
+        <a class="site-logo">
+          <img
+            class="logo-img"
+            src="images/payme_logo.svg"
+            width="138"
+            height="40"
+            alt="site-logo"
+          />
+        </a>
+        <nav class="navbar">
+          <ul class="sitenav-list">
+            <li class="sitenav-item transform">
+              <a class="sitenav-link" href="#">Pul o'tkazmalari</a>
+            </li>
+            <li class="sitenav-item cashback">
+              <a class="sitenav-link" href="#">To'lovlar</a>
+            </li>
+            <li class="sitenav-item help">
+              <a class="sitenav-link" href="#">Yordam</a>
+            </li>
+            <li class="sitenav-item lang">
+              <a class="sitenav-link" href="#">O'zbekcha</a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-list">
+                  <li class="dropdown-item ru">
+                    <a class="dropdown-link" href="#">Русский</a>
                   </li>
-              </ul>
-            </nav>
-        </div>
+                  <li class="dropdown-item uz">
+                    <a class="dropdown-link" href="#">O'zbekcha</a>
+                  </li>
+                  <li class="dropdown-item eng">
+                    <a class="dropdown-link" href="#">English</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- HEADER END -->
-</body>
+    <!-- MAIN -->
+    <main class="site-content">
+      <section class="section-auth">
+        <div class="section-auth__container container">
+          <div class="form-container">
+            <h2 class="section-auth__title">Kirish yoki ro’yxatdan o’tish</h2>
+            <form action="">
+              <label for="login">Telefon raqami</label>
+              <div class="input-group">
+                <span class="input-group__text">+998</span>
+                <input
+                  class="input-group__input"
+                  type="text"
+                  name="login"
+                  id="login"
+                />
+                <button class="input-group__btn" type="submit"></button>
+              </div>
+              <a class="change-number" type="button">
+                <span>Boshqa raqam?</span>
+              </a>
+            </form>
+            <div class="get-app">
+              <div class="google-play">
+                <div class="get-app__description">
+                  <p class="get-app__text">Yuklab oling</p>
+                  <h4 class="get-app__name">Google Play</h4>
+                </div>
+              </div>
+              <div class="app-store">
+                <div class="get-app__description">
+                  <p class="get-app__text">Yuklab oling</p>
+                  <h4 class="get-app__name">App Store</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="images-container">
+            <div class="images-container__img1"></div>
+            <div class="images-container__img2"></div>
+            <div class="images-container__img3"></div>
+            <div class="images-container__img4"></div>
+            <div class="images-container__img5"></div>
+            <div class="images-container__img6"></div>
+            <div class="images-container__img7"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

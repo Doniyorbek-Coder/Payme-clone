@@ -71,8 +71,7 @@ body {
   margin: 0;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 15px;
-  /* background-color: (--body-bg); */
-  background-color: rgba(60, 199, 60, 0.452);
+  background-color: (--body-bg);
   color: var(--text-color);
 }
 
@@ -127,15 +126,15 @@ a {
 }
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 98%;
+  left: 45%;
   transform: translateX(-50%);
 }
 .dropdown-list {
   display: none;
   padding-top: 15px;
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 9px;
   margin-top: 15px;
   background-color: var(--body-bg);
   box-shadow: -5px 0 25px rgb(0 0 0 / 10%);
@@ -145,8 +144,8 @@ a {
   display: block;
   content: "";
   position: absolute;
-  top: 1px;
-  right: 25px;
+  top: 2px;
+  right: 16px;
   width: 0;
   height: 0;
   border-left: 14px solid transparent;
@@ -173,7 +172,7 @@ a {
 .sitenav-item::before,
 .dropdown-item::before {
   transition: 0.3s;
-  margin-right: 20px;
+  margin-right: 16px;
   content: "";
   background-repeat: no-repeat;
   cursor: pointer;
@@ -207,25 +206,24 @@ a {
 }
 
 .lang::before {
-  background-image: url(../images/bayroq.png);
-  width: 24px;
-  height: 22px;
+  background-image: url(../images/uz.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.dropdown-item::before {
+  width: 30px;
+  height: 30px;
 }
 
 .ru::before {
-  background-image: url(../images/bayroq.png);
-  width: 24px;
-  height: 22px;
+  background-image: url(../images/ru.svg);
 }
 .uz::before {
-  background-image: url(../images/bayroq.png);
-  width: 24px;
-  height: 22px;
+  background-image: url(../images/uz.svg);
 }
 .eng::before {
-  background-image: url(../images/bayroq.png);
-  width: 24px;
-  height: 22px;
+  background-image: url(../images/eng.svg);
 }
 .sitenav-link,
 .dropdown-link {
