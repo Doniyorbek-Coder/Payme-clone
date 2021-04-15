@@ -367,6 +367,7 @@ a {
 
 .get-app {
   display: flex;
+  justify-content: space-between;
 }
 .get-app__icon {
   display: flex;
