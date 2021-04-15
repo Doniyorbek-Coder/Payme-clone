@@ -105,6 +105,11 @@ a {
 .site-header {
   box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .header-container {
@@ -131,6 +136,7 @@ a {
   top: 98%;
   left: 45%;
   transform: translateX(-50%);
+  z-index: 100;
 }
 .dropdown-list {
   display: none;
@@ -247,11 +253,26 @@ a {
 }
 
 /* MAIN */
-
+.site-content {
+  padding-top: 90px;
+}
 /* SECTION-AUTH */
 
 .section-auth__container {
   display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-4 {
+  max-width: 380px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form-container label {
@@ -260,15 +281,19 @@ a {
 }
 
 .section-auth__title {
+  margin-top: 116px;
+  margin-bottom: 51px;
   font-size: 32px;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .input-group {
+  margin-bottom: 20px;
+  width: 350px;
+  height: 56px;
   display: flex;
   position: relative;
-  width: fit-content;
   align-items: center;
   border-radius: 9px;
   overflow: hidden;
@@ -284,6 +309,7 @@ a {
   border-radius: 9px;
   padding: 12px 7px;
   transition: 0.3s;
+  height: 100%;
 }
 
 .input-group__text {
@@ -294,11 +320,17 @@ a {
 }
 
 .input-group__input {
+  width: 100%;
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-right: 14px;
   outline: none;
+}
+
+.input-group:focus-within .input-group__input,
+.input-group:focus-within .input-group__text {
+  border-color: var(--hover-link);
 }
 
 .input-group__btn {
@@ -333,7 +365,44 @@ a {
   }
 }
 
+.get-app {
+  display: flex;
+}
+.get-app__icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.get-app__icon::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.google-play::before {
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/Google_Play.svg);
+}
+.app-store::before {
+  background-image: url(../images/apple.svg);
+}
+
+.get-app__text,
+.get-app__name {
+  margin: 0;
+}
+
+.col-8 {
+  max-width: 760px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .images-container {
+  margin-left: -71px;
   width: 850px;
   height: 520px;
   background: url(../images/img1.svg) no-repeat top;
@@ -341,25 +410,67 @@ a {
   position: relative;
 }
 
+.images-container * {
+  position: absolute;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
 .images-container__img1 {
   width: 226px;
   height: 313px;
-  position: absolute;
   top: 207px;
   left: 158px;
   background-image: url(../images/img2.svg);
 }
-
+.images-container__img2 {
+  width: 271px;
+  height: 194px;
+  top: 311px;
+  left: 479px;
+  background-image: url(../images/img3.svg);
+}
+.images-container__img3 {
+  width: 208px;
+  height: 388px;
+  top: 108px;
+  left: 337px;
+  background-size: 208px 388px;
+  background-image: url(../images/img4.png);
+}
+.images-container__img4 {
+  width: 220px;
+  height: 420px;
+  top: 90px;
+  left: 330px;
+  background-image: url(../images/img4.svg);
+}
 .images-container__img5 {
   width: 236px;
   height: 316px;
-  position: absolute;
   top: 181px;
   left: 178px;
   background-image: url(../images/img5.svg);
   animation: img5 ease-in-out 4s infinite;
 }
-
+.images-container__img6 {
+  width: 172px;
+  height: 92px;
+  top: 326px;
+  left: 508px;
+  background-image: url(../images/img6.svg);
+  animation: img6 ease-in-out 3s infinite;
+}
+.images-container__img7 {
+  opacity: 1;
+  width: 208px;
+  height: 52px;
+  top: 168px;
+  left: 337px;
+  background-size: 208px 52px;
+  cursor: pointer;
+  background-image: url(../images/img7.png);
+}
 @keyframes img5 {
   0% {
     transform: rotate(0);
@@ -370,4 +481,22 @@ a {
   100% {
     transform: rotate(0);
   }
+}
+@keyframes img6 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.change-number {
+  transition: 0.3s;
+}
+.change-number:hover {
+  cursor: pointer;
+  color: var(--hover-link);
 }

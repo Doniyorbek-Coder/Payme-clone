@@ -59,56 +59,64 @@
       <!-- SECTION-AUTH -->
       <section class="section-auth">
         <div class="section-auth__container container">
-          <div class="form-container">
-            <h2 class="section-auth__title">Kirish yoki ro’yxatdan o’tish</h2>
-            <form action="">
-              <label for="login">Telefon raqami</label>
-              <div class="input-group">
-                <span class="input-group__text">+998</span>
-                <input
-                  class="input-group__input"
-                  autocomplete="tel-national"
-                  inputmode="tel"
-                  type="tel"
-                  name="login"
-                  id="login"
-                  ngmodel
-                  mask="00 000 00 00"
-                  pattern="^[0-9*]{9}$"
-                  placeholder="-- --- -- --"
-                  required
-                />
-                <div class="input-group__enter">
-                  <button class="input-group__btn" type="submit"></button>
-                </div>
-              </div>
-              <a class="change-number" type="button">
-                <span>Boshqa raqam?</span>
-              </a>
-            </form>
-            <div class="get-app">
-              <div class="google-play">
-                <div class="get-app__description">
-                  <p class="get-app__text">Yuklab oling</p>
-                  <h4 class="get-app__name">Google Play</h4>
-                </div>
-              </div>
-              <div class="app-store">
-                <div class="get-app__description">
-                  <p class="get-app__text">Yuklab oling</p>
-                  <h4 class="get-app__name">App Store</h4>
+          <div class="row">
+            <div class="col-4">
+              <div class="form-container">
+                <h2 class="section-auth__title">
+                  Kirish yoki ro’yxatdan o’tish
+                </h2>
+                <form action="">
+                  <label for="login">Telefon raqami</label>
+                  <div class="input-group">
+                    <span class="input-group__text">+998</span>
+                    <input
+                      class="input-group__input"
+                      autocomplete="tel-national"
+                      inputmode="tel"
+                      type="tel"
+                      name="login"
+                      id="login"
+                      ngmodel
+                      mask="00 000 00 00"
+                      pattern="^[0-9*]{9}$"
+                      placeholder="-- --- -- --"
+                      required
+                    />
+                    <div class="input-group__enter">
+                      <button class="input-group__btn" type="submit"></button>
+                    </div>
+                  </div>
+                  <a class="change-number" type="button">
+                    <span>Boshqa raqam?</span>
+                  </a>
+                </form>
+                <div class="get-app">
+                  <div class="get-app__icon google-play">
+                    <div class="get-app__description">
+                      <p class="get-app__text">Yuklab oling</p>
+                      <h4 class="get-app__name">Google Play</h4>
+                    </div>
+                  </div>
+                  <div class="get-app__icon app-store">
+                    <div class="get-app__description">
+                      <p class="get-app__text">Yuklab oling</p>
+                      <h4 class="get-app__name">App Store</h4>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="images-container">
-            <div class="images-container__img1"></div>
-            <div class="images-container__img2"></div>
-            <div class="images-container__img3"></div>
-            <div class="images-container__img4"></div>
-            <div class="images-container__img5"></div>
-            <div class="images-container__img6"></div>
-            <div class="images-container__img7"></div>
+            <div class="col-8">
+              <div class="images-container">
+                <div class="images-container__img1"></div>
+                <div class="images-container__img2"></div>
+                <div class="images-container__img3"></div>
+                <div class="images-container__img4"></div>
+                <div class="images-container__img5"></div>
+                <div class="images-container__img6"></div>
+                <div class="images-container__img7"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
