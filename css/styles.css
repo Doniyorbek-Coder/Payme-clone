@@ -1,53 +1,53 @@
 /* FONTS */
 /* rubik-300 - latin */
 @font-face {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/rubik-v12-latin-300.woff2") format("woff2"),
-    url("../fonts/rubik-v12-latin-300.woff") format("woff");
+  src: url('../fonts/rubik-v12-latin-300.woff2') format('woff2'),
+    url('../fonts/rubik-v12-latin-300.woff') format('woff');
 }
 /* rubik-regular - latin */
 @font-face {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/rubik-v12-latin-regular.woff2") format("woff2"),
-    url("../fonts/rubik-v12-latin-regular.woff") format("woff");
+  src: url('../fonts/rubik-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v12-latin-regular.woff') format('woff');
 }
 /* rubik-500 - latin */
 @font-face {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/rubik-v12-latin-500.woff2") format("woff2"),
-    url("../fonts/rubik-v12-latin-500.woff") format("woff");
+  src: url('../fonts/rubik-v12-latin-500.woff2') format('woff2'),
+    url('../fonts/rubik-v12-latin-500.woff') format('woff');
 }
 
 /* --------------------- */
 /* rubik-300 - cyrillic */
 @font-face {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/rubik-v12-cyrillic-300.woff2") format("woff2"),
-    url("../fonts/rubik-v12-cyrillic-300.woff") format("woff");
+  src: url('../fonts/rubik-v12-cyrillic-300.woff2') format('woff2'),
+    url('../fonts/rubik-v12-cyrillic-300.woff') format('woff');
 }
 /* rubik-regular - cyrillic */
 @font-face {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/rubik-v12-cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/rubik-v12-cyrillic-regular.woff") format("woff");
+  src: url('../fonts/rubik-v12-cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v12-cyrillic-regular.woff') format('woff');
 }
 /* rubik-500 - cyrillic */
 @font-face {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/rubik-v12-cyrillic-500.woff2") format("woff2"),
-    url("../fonts/rubik-v12-cyrillic-500.woff") format("woff");
+  src: url('../fonts/rubik-v12-cyrillic-500.woff2') format('woff2'),
+    url('../fonts/rubik-v12-cyrillic-500.woff') format('woff');
 }
 /* Variables */
 :root {
@@ -71,7 +71,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Rubik", "Arial", sans-serif;
+  font-family: 'Rubik', 'Arial', sans-serif;
   font-size: 15px;
   background-color: (--body-bg);
   color: var(--text-color);
@@ -150,7 +150,7 @@ a {
 
 .dropdown-list::before {
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   top: 2px;
   right: 16px;
@@ -181,7 +181,7 @@ a {
 .dropdown-item::before {
   transition: 0.3s;
   margin-right: 16px;
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -376,7 +376,7 @@ a {
 }
 .get-app__icon::before {
   display: block;
-  content: "";
+  content: '';
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
@@ -391,9 +391,21 @@ a {
   background-image: url(../images/apple.svg);
 }
 
-.get-app__text,
+.get-app__text {
+  margin: 0;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
 .get-app__name {
   margin: 0;
+  font-size: 21px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-app__icon:hover .get-app__text,
+.get-app__icon:hover .get-app__name {
+  color: #3cc;
 }
 
 .col-8 {
